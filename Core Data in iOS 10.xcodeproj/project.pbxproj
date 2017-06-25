@@ -19,6 +19,8 @@
 		17F2E1921F001E0300085F2F /* UniversityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1901F001E0300085F2F /* UniversityTableViewCell.swift */; };
 		17F2E1931F001E0300085F2F /* UniversityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F2E1911F001E0300085F2F /* UniversityTableViewCell.xib */; };
 		17F2E1951F00233600085F2F /* AddUniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1941F00233600085F2F /* AddUniversityViewController.swift */; };
+		17F2E1981F00348F00085F2F /* UniversityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1971F00348F00085F2F /* UniversityDetailsViewController.swift */; };
+		17F2E19B1F003C6900085F2F /* EditModeViewControllerCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E19A1F003C6900085F2F /* EditModeViewControllerCommon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		17F2E1901F001E0300085F2F /* UniversityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniversityTableViewCell.swift; path = Screens/UniversitiesList/UniversityTableViewCell.swift; sourceTree = "<group>"; };
 		17F2E1911F001E0300085F2F /* UniversityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UniversityTableViewCell.xib; path = Screens/UniversitiesList/UniversityTableViewCell.xib; sourceTree = "<group>"; };
 		17F2E1941F00233600085F2F /* AddUniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUniversityViewController.swift; path = Screens/AddUniversity/AddUniversityViewController.swift; sourceTree = "<group>"; };
+		17F2E1971F00348F00085F2F /* UniversityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniversityDetailsViewController.swift; path = Screens/UniversityDetails/UniversityDetailsViewController.swift; sourceTree = "<group>"; };
+		17F2E19A1F003C6900085F2F /* EditModeViewControllerCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditModeViewControllerCommon.swift; path = Screens/Common/EditModeViewControllerCommon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 		17F2E18B1F001B8F00085F2F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				17F2E1991F003C4800085F2F /* Common */,
 				17F2E18C1F001B9800085F2F /* UniversitiesList */,
 				17F2E18D1F001BBF00085F2F /* AddUniversity */,
+				17F2E1961F00345B00085F2F /* UniversityDetails */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -123,6 +129,22 @@
 				17F2E1941F00233600085F2F /* AddUniversityViewController.swift */,
 			);
 			name = AddUniversity;
+			sourceTree = "<group>";
+		};
+		17F2E1961F00345B00085F2F /* UniversityDetails */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E1971F00348F00085F2F /* UniversityDetailsViewController.swift */,
+			);
+			name = UniversityDetails;
+			sourceTree = "<group>";
+		};
+		17F2E1991F003C4800085F2F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E19A1F003C6900085F2F /* EditModeViewControllerCommon.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F2E19B1F003C6900085F2F /* EditModeViewControllerCommon.swift in Sources */,
 				172852AF1EFFDBD900FDDF0D /* AppDelegate.swift in Sources */,
 				17F2E1881F00101800085F2F /* CoreDataManager.swift in Sources */,
 				17F2E1951F00233600085F2F /* AddUniversityViewController.swift in Sources */,
+				17F2E1981F00348F00085F2F /* UniversityDetailsViewController.swift in Sources */,
 				17F2E18A1F00101800085F2F /* University+CoreDataProperties.swift in Sources */,
 				17F2E1891F00101800085F2F /* University+CoreDataClass.swift in Sources */,
 				172852B71EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld in Sources */,

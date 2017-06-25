@@ -8,13 +8,8 @@
 
 import UIKit
 
-class AddUniversityViewController: UIViewController {
+class AddUniversityViewController: EditModeViewControllerCommon {
 
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var countryTextField: UITextField!
-    @IBOutlet weak var numberOfStudentsTextField: UITextField!
-    @IBOutlet weak var isPublicSwitch: UISwitch!
     let screenTitle = "Add University"
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,12 +32,6 @@ class AddUniversityViewController: UIViewController {
             university.isPublic = isPublicSwitch.isOn
             CoreDataManager.saveContext()
             dismiss(animated: true, completion: nil)
-        }
-    }
-    
-    @IBAction func textFieldEditingChanged(_ sender: Any) {
-        if let name = nameTextField.text, let country = countryTextField.text, let numberOfStudents = numberOfStudentsTextField.text {
-            saveButton.isEnabled = name.characters.count > 0 && country.characters.count > 0 && numberOfStudents.characters.count > 0
         }
     }
 }

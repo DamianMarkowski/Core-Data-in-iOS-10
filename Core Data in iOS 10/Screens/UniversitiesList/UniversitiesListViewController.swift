@@ -17,6 +17,8 @@ class UniversitiesListViewController: UIViewController {
     let cellXibName = "UniversityTableViewCell"
     var universities: [University]!
     let screenTitle = "Universities"
+    var selectedUniversity: University!
+    let showDetailsSegueIdentifier = "showDetails"
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -57,6 +59,14 @@ class UniversitiesListViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "addUniversity") as! AddUniversityViewController
         present(vc, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == showDetailsSegueIdentifier {
+            let vc = segue.destination as! UniversityDetailsViewController
+            vc.selectedUniversity = selectedUniversity
+            vc.editMode = false
+        }
+    }
 }
 
 extension UniversitiesListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -77,5 +87,10 @@ extension UniversitiesListViewController: UITableViewDataSource, UITableViewDele
             universities.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedUniversity = universities[indexPath.row]
+        performSegue(withIdentifier: showDetailsSegueIdentifier, sender: self)
     }
 }

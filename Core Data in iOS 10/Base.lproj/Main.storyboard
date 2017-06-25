@@ -56,11 +56,183 @@
                     <connections>
                         <outlet property="noUniversitiesInfoLabel" destination="B2O-DR-H6v" id="79j-d9-QCn"/>
                         <outlet property="tableView" destination="duf-w1-GsG" id="Xkv-Da-Yr7"/>
+                        <segue destination="ZkD-s1-5hx" kind="show" identifier="showDetails" id="1yA-YF-IhS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1055.2" y="123.68815592203899"/>
+        </scene>
+        <!--University Details View Controller-->
+        <scene sceneID="VtG-5e-uQk">
+            <objects>
+                <viewController id="ZkD-s1-5hx" customClass="UniversityDetailsViewController" customModule="Core_Data_in_iOS_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dgb-gY-FNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Cb-uM-m75"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Hi-dX-NXY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-yr-xfb" userLabel="display container">
+                                <rect key="frame" x="10" y="64" width="355" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES6-cB-Hx5" userLabel="Name label">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IR-BH-BWH" userLabel="name value">
+                                        <rect key="frame" x="0.0" y="44" width="355" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-t9-zkZ" userLabel="Country label">
+                                        <rect key="frame" x="0.0" y="87.5" width="355" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svI-uU-qQU" userLabel="country value">
+                                        <rect key="frame" x="0.0" y="131.5" width="355" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of students" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAL-q2-fZp" userLabel="Number of students label">
+                                        <rect key="frame" x="0.0" y="175" width="355" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7v1-Ou-PPk" userLabel="number of students value">
+                                        <rect key="frame" x="0.0" y="219" width="355" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is public" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARh-9t-lqA" userLabel="Is public label">
+                                        <rect key="frame" x="0.0" y="262.5" width="355" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9M-27-ixb">
+                                        <rect key="frame" x="0.0" y="306.5" width="357" height="43.5"/>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="AKs-bA-gPV"/>
+                                </constraints>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4vj-Vz-tZ0" userLabel="edit container">
+                                <rect key="frame" x="10" y="64" width="355" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huI-wH-se5" userLabel="Name label">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Usq-Ax-4Ru">
+                                        <rect key="frame" x="0.0" y="39" width="355" height="39"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="ZkD-s1-5hx" eventType="editingChanged" id="9jA-dh-c5S"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52C-e1-VOn" userLabel="Country label">
+                                        <rect key="frame" x="0.0" y="78" width="355" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hg5-dI-RGX">
+                                        <rect key="frame" x="0.0" y="116.5" width="355" height="39"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="ZkD-s1-5hx" eventType="editingChanged" id="gaG-fm-dqt"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of students" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFc-Q5-VgB" userLabel="Number of students label">
+                                        <rect key="frame" x="0.0" y="155.5" width="355" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBn-9m-46O">
+                                        <rect key="frame" x="0.0" y="194.5" width="355" height="39"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="ZkD-s1-5hx" eventType="editingChanged" id="57g-wC-CkH"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is public" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJM-RV-hMJ" userLabel="Is public label">
+                                        <rect key="frame" x="0.0" y="233.5" width="355" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAr-72-8pU">
+                                        <rect key="frame" x="0.0" y="272" width="357" height="39"/>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OI-pw-K1V" userLabel="Save">
+                                        <rect key="frame" x="0.0" y="311" width="355" height="39"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonClicked:" destination="ZkD-s1-5hx" eventType="touchUpInside" id="J8i-lh-Jk7"/>
+                                            <action selector="saveButtonClicked:" destination="d4i-UZ-bMR" eventType="touchUpInside" id="awI-oY-EKH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="HOq-lW-2ph"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bTp-yr-xfb" firstAttribute="top" secondItem="dgb-gY-FNd" secondAttribute="bottom" id="8fr-Zv-CnV"/>
+                            <constraint firstAttribute="trailing" secondItem="4vj-Vz-tZ0" secondAttribute="trailing" constant="10" id="Ux3-fo-kqI"/>
+                            <constraint firstItem="4vj-Vz-tZ0" firstAttribute="top" secondItem="dgb-gY-FNd" secondAttribute="bottom" id="c5W-I1-pEX"/>
+                            <constraint firstItem="bTp-yr-xfb" firstAttribute="leading" secondItem="7Hi-dX-NXY" secondAttribute="leading" constant="10" id="c5a-Xh-nEQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bTp-yr-xfb" secondAttribute="trailing" constant="10" id="kBu-By-vve"/>
+                            <constraint firstItem="4vj-Vz-tZ0" firstAttribute="leading" secondItem="7Hi-dX-NXY" secondAttribute="leading" constant="10" id="lFE-CG-418"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Qh-S1-5cW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Ag8-fx-CRu">
+                            <connections>
+                                <action selector="editButtonClicked:" destination="ZkD-s1-5hx" id="a6D-WM-EvJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="countryLabel" destination="svI-uU-qQU" id="xlE-is-bAP"/>
+                        <outlet property="countryTextField" destination="Hg5-dI-RGX" id="DgY-wU-NIQ"/>
+                        <outlet property="displayContainer" destination="bTp-yr-xfb" id="Rcb-9c-KiG"/>
+                        <outlet property="editContainer" destination="4vj-Vz-tZ0" id="0bv-1v-MGP"/>
+                        <outlet property="isPublicSwitch" destination="EAr-72-8pU" id="orr-Oa-1do"/>
+                        <outlet property="isPublicSwitchDisplay" destination="P9M-27-ixb" id="xOw-NV-PZa"/>
+                        <outlet property="nameLabel" destination="4IR-BH-BWH" id="EmK-LL-7oC"/>
+                        <outlet property="nameTextField" destination="Usq-Ax-4Ru" id="KFs-n4-U5b"/>
+                        <outlet property="numberOfStudentsLabel" destination="7v1-Ou-PPk" id="5up-tg-deM"/>
+                        <outlet property="numberOfStudentsTextField" destination="SBn-9m-46O" id="krd-FD-sq7"/>
+                        <outlet property="saveButton" destination="7OI-pw-K1V" id="GmF-En-SrH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tV-6q-yci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824.8000000000002" y="468.21589205397305"/>
         </scene>
         <!--Add University View Controller-->
         <scene sceneID="fpW-UX-lDt">
@@ -117,7 +289,7 @@
                                         <rect key="frame" x="0.0" y="194.5" width="355" height="39"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
                                             <action selector="textFieldEditingChanged:" destination="d4i-UZ-bMR" eventType="editingChanged" id="hiS-Hd-0eo"/>
                                         </connections>
@@ -161,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4KN-C6-Qa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2815.1999999999998" y="-259.52023988005999"/>
+            <point key="canvasLocation" x="1890" y="-278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rSI-kF-eZv">
@@ -181,5 +353,26 @@
             </objects>
             <point key="canvasLocation" x="170" y="124"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KN9-7p-e7K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="th8-iJ-DS3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d22-1v-epu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZkD-s1-5hx" kind="relationship" relationship="rootViewController" id="iRO-ji-YE1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaB-u9-8XC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="607"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1yA-YF-IhS"/>
+    </inferredMetricsTieBreakers>
 </document>
