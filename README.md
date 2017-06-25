@@ -6,7 +6,7 @@ The project demonstrates how to work with Core Data in iOS 10 using Swift. Sampl
 
 ### Prerequisites
 
-- XCode 8 and Swift 3
+- Xcode 8 and Swift 3
 
 ## License
 
