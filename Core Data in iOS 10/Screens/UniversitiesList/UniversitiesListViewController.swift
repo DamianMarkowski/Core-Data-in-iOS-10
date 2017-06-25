@@ -70,4 +70,12 @@ extension UniversitiesListViewController: UITableViewDataSource, UITableViewDele
         cell.configure(universities[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            CoreDataManager.getContext().delete(universities[indexPath.row])
+            universities.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
