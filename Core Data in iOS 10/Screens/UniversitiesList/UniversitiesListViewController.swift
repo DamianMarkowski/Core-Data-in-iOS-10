@@ -16,12 +16,18 @@ class UniversitiesListViewController: UIViewController {
     let cellIdentifier = "Cell"
     let cellXibName = "UniversityTableViewCell"
     var universities: [University]!
+    let screenTitle = "Universities"
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        title = screenTitle
+        fetchUniversities()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         universities = []
         configureTableView()
-        fetchUniversities()
     }
     
     fileprivate func configureTableView(){
@@ -47,6 +53,9 @@ class UniversitiesListViewController: UIViewController {
     }
     
     @IBAction func addButtonClicked(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "addUniversity") as! AddUniversityViewController
+        present(vc, animated: true, completion: nil)
     }
 }
 

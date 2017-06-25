@@ -18,6 +18,7 @@
 		17F2E18F1F001C1E00085F2F /* UniversitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E18E1F001C1E00085F2F /* UniversitiesListViewController.swift */; };
 		17F2E1921F001E0300085F2F /* UniversityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1901F001E0300085F2F /* UniversityTableViewCell.swift */; };
 		17F2E1931F001E0300085F2F /* UniversityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F2E1911F001E0300085F2F /* UniversityTableViewCell.xib */; };
+		17F2E1951F00233600085F2F /* AddUniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1941F00233600085F2F /* AddUniversityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		17F2E18E1F001C1E00085F2F /* UniversitiesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniversitiesListViewController.swift; path = Screens/UniversitiesList/UniversitiesListViewController.swift; sourceTree = "<group>"; };
 		17F2E1901F001E0300085F2F /* UniversityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniversityTableViewCell.swift; path = Screens/UniversitiesList/UniversityTableViewCell.swift; sourceTree = "<group>"; };
 		17F2E1911F001E0300085F2F /* UniversityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UniversityTableViewCell.xib; path = Screens/UniversitiesList/UniversityTableViewCell.xib; sourceTree = "<group>"; };
+		17F2E1941F00233600085F2F /* AddUniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUniversityViewController.swift; path = Screens/AddUniversity/AddUniversityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		17F2E18D1F001BBF00085F2F /* AddUniversity */ = {
 			isa = PBXGroup;
 			children = (
+				17F2E1941F00233600085F2F /* AddUniversityViewController.swift */,
 			);
 			name = AddUniversity;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			files = (
 				172852AF1EFFDBD900FDDF0D /* AppDelegate.swift in Sources */,
 				17F2E1881F00101800085F2F /* CoreDataManager.swift in Sources */,
+				17F2E1951F00233600085F2F /* AddUniversityViewController.swift in Sources */,
 				17F2E18A1F00101800085F2F /* University+CoreDataProperties.swift in Sources */,
 				17F2E1891F00101800085F2F /* University+CoreDataClass.swift in Sources */,
 				172852B71EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld in Sources */,
