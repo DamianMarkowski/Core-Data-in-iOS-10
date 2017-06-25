@@ -10,8 +10,7 @@ The project demonstrates how to work with Core Data in iOS 10 using Swift. Sampl
 
 ## TO DO
 
-1. Add UniversityDetails screen.
-2. Implement Update operation.
+1. Fix warnings.
 
 ## License
 
