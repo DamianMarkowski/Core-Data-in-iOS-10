@@ -8,6 +8,11 @@ The project demonstrates how to work with Core Data in iOS 10 using Swift. Sampl
 
 - Xcode 8 and Swift 3
 
+## TO DO
+
+1. Add UniversityDetails screen.
+2. Implement Update operation.
+
 ## License
 
 This project is licensed under the MIT License (https://opensource.org/licenses/MIT)
