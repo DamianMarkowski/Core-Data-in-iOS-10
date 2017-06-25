@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		172852AF1EFFDBD900FDDF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172852AE1EFFDBD900FDDF0D /* AppDelegate.swift */; };
-		172852B11EFFDBD900FDDF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172852B01EFFDBD900FDDF0D /* ViewController.swift */; };
 		172852B41EFFDBD900FDDF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172852B21EFFDBD900FDDF0D /* Main.storyboard */; };
 		172852B71EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 172852B51EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld */; };
 		172852B91EFFDBD900FDDF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172852B81EFFDBD900FDDF0D /* Assets.xcassets */; };
@@ -16,12 +15,14 @@
 		17F2E1881F00101800085F2F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1841F00101800085F2F /* CoreDataManager.swift */; };
 		17F2E1891F00101800085F2F /* University+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1861F00101800085F2F /* University+CoreDataClass.swift */; };
 		17F2E18A1F00101800085F2F /* University+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1871F00101800085F2F /* University+CoreDataProperties.swift */; };
+		17F2E18F1F001C1E00085F2F /* UniversitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E18E1F001C1E00085F2F /* UniversitiesListViewController.swift */; };
+		17F2E1921F001E0300085F2F /* UniversityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1901F001E0300085F2F /* UniversityTableViewCell.swift */; };
+		17F2E1931F001E0300085F2F /* UniversityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F2E1911F001E0300085F2F /* UniversityTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		172852AB1EFFDBD900FDDF0D /* Core Data in iOS 10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data in iOS 10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		172852AE1EFFDBD900FDDF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		172852B01EFFDBD900FDDF0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		172852B31EFFDBD900FDDF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		172852B61EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data_in_iOS_10.xcdatamodel; sourceTree = "<group>"; };
 		172852B81EFFDBD900FDDF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +31,9 @@
 		17F2E1841F00101800085F2F /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		17F2E1861F00101800085F2F /* University+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "University+CoreDataClass.swift"; sourceTree = "<group>"; };
 		17F2E1871F00101800085F2F /* University+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "University+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		17F2E18E1F001C1E00085F2F /* UniversitiesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniversitiesListViewController.swift; path = Screens/UniversitiesList/UniversitiesListViewController.swift; sourceTree = "<group>"; };
+		17F2E1901F001E0300085F2F /* UniversityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniversityTableViewCell.swift; path = Screens/UniversitiesList/UniversityTableViewCell.swift; sourceTree = "<group>"; };
+		17F2E1911F001E0300085F2F /* UniversityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UniversityTableViewCell.xib; path = Screens/UniversitiesList/UniversityTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,9 @@
 		172852AD1EFFDBD900FDDF0D /* Core Data in iOS 10 */ = {
 			isa = PBXGroup;
 			children = (
+				17F2E18B1F001B8F00085F2F /* Screens */,
 				17F2E1831F00101800085F2F /* CoreData */,
 				172852AE1EFFDBD900FDDF0D /* AppDelegate.swift */,
-				172852B01EFFDBD900FDDF0D /* ViewController.swift */,
 				172852B21EFFDBD900FDDF0D /* Main.storyboard */,
 				172852B81EFFDBD900FDDF0D /* Assets.xcassets */,
 				172852BA1EFFDBD900FDDF0D /* LaunchScreen.storyboard */,
@@ -90,6 +94,32 @@
 				17F2E1871F00101800085F2F /* University+CoreDataProperties.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		17F2E18B1F001B8F00085F2F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E18C1F001B9800085F2F /* UniversitiesList */,
+				17F2E18D1F001BBF00085F2F /* AddUniversity */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		17F2E18C1F001B9800085F2F /* UniversitiesList */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E18E1F001C1E00085F2F /* UniversitiesListViewController.swift */,
+				17F2E1901F001E0300085F2F /* UniversityTableViewCell.swift */,
+				17F2E1911F001E0300085F2F /* UniversityTableViewCell.xib */,
+			);
+			name = UniversitiesList;
+			sourceTree = "<group>";
+		};
+		17F2E18D1F001BBF00085F2F /* AddUniversity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AddUniversity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				172852BC1EFFDBD900FDDF0D /* LaunchScreen.storyboard in Resources */,
+				17F2E1931F001E0300085F2F /* UniversityTableViewCell.xib in Resources */,
 				172852B91EFFDBD900FDDF0D /* Assets.xcassets in Resources */,
 				172852B41EFFDBD900FDDF0D /* Main.storyboard in Resources */,
 			);
@@ -164,12 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				172852B11EFFDBD900FDDF0D /* ViewController.swift in Sources */,
 				172852AF1EFFDBD900FDDF0D /* AppDelegate.swift in Sources */,
 				17F2E1881F00101800085F2F /* CoreDataManager.swift in Sources */,
 				17F2E18A1F00101800085F2F /* University+CoreDataProperties.swift in Sources */,
 				17F2E1891F00101800085F2F /* University+CoreDataClass.swift in Sources */,
 				172852B71EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld in Sources */,
+				17F2E1921F001E0300085F2F /* UniversityTableViewCell.swift in Sources */,
+				17F2E18F1F001C1E00085F2F /* UniversitiesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
