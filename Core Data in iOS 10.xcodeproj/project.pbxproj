@@ -13,6 +13,9 @@
 		172852B71EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 172852B51EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld */; };
 		172852B91EFFDBD900FDDF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172852B81EFFDBD900FDDF0D /* Assets.xcassets */; };
 		172852BC1EFFDBD900FDDF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172852BA1EFFDBD900FDDF0D /* LaunchScreen.storyboard */; };
+		17F2E1881F00101800085F2F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1841F00101800085F2F /* CoreDataManager.swift */; };
+		17F2E1891F00101800085F2F /* University+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1861F00101800085F2F /* University+CoreDataClass.swift */; };
+		17F2E18A1F00101800085F2F /* University+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E1871F00101800085F2F /* University+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		172852B81EFFDBD900FDDF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		172852BB1EFFDBD900FDDF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		172852BD1EFFDBD900FDDF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F2E1841F00101800085F2F /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		17F2E1861F00101800085F2F /* University+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "University+CoreDataClass.swift"; sourceTree = "<group>"; };
+		17F2E1871F00101800085F2F /* University+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "University+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		172852AD1EFFDBD900FDDF0D /* Core Data in iOS 10 */ = {
 			isa = PBXGroup;
 			children = (
+				17F2E1831F00101800085F2F /* CoreData */,
 				172852AE1EFFDBD900FDDF0D /* AppDelegate.swift */,
 				172852B01EFFDBD900FDDF0D /* ViewController.swift */,
 				172852B21EFFDBD900FDDF0D /* Main.storyboard */,
@@ -65,6 +72,24 @@
 				172852B51EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld */,
 			);
 			path = "Core Data in iOS 10";
+			sourceTree = "<group>";
+		};
+		17F2E1831F00101800085F2F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E1841F00101800085F2F /* CoreDataManager.swift */,
+				17F2E1851F00101800085F2F /* Models */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		17F2E1851F00101800085F2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E1861F00101800085F2F /* University+CoreDataClass.swift */,
+				17F2E1871F00101800085F2F /* University+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +166,9 @@
 			files = (
 				172852B11EFFDBD900FDDF0D /* ViewController.swift in Sources */,
 				172852AF1EFFDBD900FDDF0D /* AppDelegate.swift in Sources */,
+				17F2E1881F00101800085F2F /* CoreDataManager.swift in Sources */,
+				17F2E18A1F00101800085F2F /* University+CoreDataProperties.swift in Sources */,
+				17F2E1891F00101800085F2F /* University+CoreDataClass.swift in Sources */,
 				172852B71EFFDBD900FDDF0D /* Core_Data_in_iOS_10.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +331,7 @@
 				172852C21EFFDBD900FDDF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
